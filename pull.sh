@@ -1,14 +1,16 @@
 #!/bin/bash
 
-# images=$(docker images --format "{{.Repository}}:{{.Tag}}" | awk -F '/' '{split($0,a,"/");print a[2]}')
-
 images=( \
 	[0]="kube-proxy-amd64:v1.10.3" \
 	[1]="kube-controller-manager-amd64:v1.10.3" \
 	[2]="kube-apiserver-amd64:v1.10.3" \
 	[3]="kube-scheduler-amd64:v1.10.3" \
 	[4]="etcd-amd64:3.1.12" \
-	[5]="pause-amd64:3.1")
+	[5]="pause-amd64:3.1" \
+	[6]="k8s-dns-dnsmasq-nanny-amd64:1.14.8" \
+	[7]="k8s-dns-kube-dns-amd64:1.14.8" \
+	[8]="k8s-dns-sidecar-amd64:1.14.8" \
+	[9]="kubernetes-dashboard-amd64:v1.8.3")
 
 for image in ${images[@]}
 do
