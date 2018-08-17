@@ -1,8 +1,7 @@
 # k8s-library
 
 ## 2018-08-17
-切换到使用Aliyun的Mirror:  [https://dev.aliyun.com/list.html?namePrefix=google_container](https://dev
-.aliyun.com/list.html?namePrefix=google_container)
+切换到使用Aliyun的Mirror:  [https://dev.aliyun.com/list.html?namePrefix=google_container](https://dev.aliyun.com/list.html?namePrefix=google_container)
 
 - k8s.gcr.io/etcd-amd64:3.2.18
 - k8s.gcr.io/coredns:1.1.3
